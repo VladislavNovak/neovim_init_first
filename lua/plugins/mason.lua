@@ -1,4 +1,5 @@
 return {
+	-- part Mason
 	{
 		"williamboman/mason.nvim",
 		config = function()
@@ -10,9 +11,11 @@ return {
 						package_uninstalled = "✗",
 					},
 				},
+				ensure_installed = { "markdownlint-cli2", "markdow-toc" },
 			})
 		end,
 	},
+	-- part Mason-lspconfig
 	{
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
